@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "Young";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Young"), local("Young-Regular"), url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Outfit"), local("Outfit-Regular"), url(./assets/fonts/outfit/static/Outfit-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Outfit"), local("Outfit-Semi-Bold"), url(./assets/fonts/outfit/static/Outfit-SemiBold.ttf), format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Outfit"), local("Outfit-Bold"), url(./assets/fonts/outfit/static/Outfit-Bold.ttf), format("truetype");
+}
+
+:root {
+  --color-white: hsl(0,0%,100%);
+  --color-stone900: hsl(24, 5%, 18%)
+  --color-stone600: hsl(30, 10%, 34%)
+  --color-stone100: hsl(30, 54%, 90%)
+  --color-brown800: hsl(14, 45%, 36%)
+  --color-rose50: hsl(330, 100%, 98%)
+  --color-rose800: hsl(332, 51%, 32%)
+  --color-stone150: hsl(30, 18%, 87%)
+  --color-attribution-a: hsl(228, 45%, 44%)
+  --fontweight-regular: 400;
+  --fontweight-semi-bold: 600;
+  --fontweight-bold: 700;
+}
+
+body {
+  font-family: "Outfit", serif;
+  font-size: 100%;
+  font-weight: var(--fontweight-regular);
+  background-color:hsl(30, 54%, 90%) ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+main {
+  background-color: var(--color-white);
+  border-radius: 2rem;
+  max-width: 46rem;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  margin-bottom: 1rem;
+}
+
+img {
+  border-radius: 0.5rem;
+}
+
+.first-text {
+  margin-left: 40px;
+}
+
+h1 {
+  font-family: "Young", sans-serif;
+  font-weight: var(--fontweight-regular);
+  color: var(--color-rose800); 
+}
+
+.preparation-block {
+ margin-left: 40px;
+ margin-top: 40px;
+ background-color: #fff7fe;
+ padding: 2px;
+}
+
+.preparation-title {
+  color: hsl(332, 51%, 32%);
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.preparation-block strong {
+  color: hsl(30, 10%, 34%);
+}
+
+.preparation-block li {
+  margin-bottom: 10px;
+}
+
+.ingredient-block {
+  display: block;
+  margin-left: 45px;
+  margin-bottom: 30px;
+}
+
+.ingredient-block h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(14, 45%, 36%);
+}
+
+.ingredient-block li {
+  margin-bottom: 10px;
+}
+
+hr {
+  color: var(--color-stone150);
+}
+
+.instruction-block {
+  margin-bottom: 40px;
+}
+
+.instruction-block h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(14, 45%, 36%);
+  margin-left: 45px;
+}
+
+.instruction-block strong {
+  color: var(--color-stone600);
+  font-weight: var(--fontweight-semi-bold);
+}
+
+.instruction-block li {
+  margin-bottom: 15px;
+  margin-left: 10px;
+  color: var(--color-stone600);
+}
+
+.instruction-block li::marker {
+  color: var(--color-rose800);
+  font-weight: var(--fontweight-semi-bold);
+}
+
+.instruction-block strong::after {
+  color: var(--color-stone600);
+  font-family: "Outfit";
+  font-weight: var(--fontweight-regular);
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.nutrition-block {
+  margin-left: 45px;
+}
+
+.nutrition-block h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(14, 45%, 36%);
+}
+
+ table {
+  width: 34%;
+}
+
+td,th {
+ border-bottom: 2px solid hsl(30, 54%, 90%);
+}
+
+th {
+  color: hsl(332, 51%, 32%);
+  font-weight: var(--fontweight-bold);
+}
+
+footer {
+  margin-top: 45px;
+  text-align: center;
+}
+  
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:320px) {
+  body {
+    margin: 0;
+   }
+
+   main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0;
+   }
+
+   image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+   }
+
+   img {
+    margin-top: 11.5rem;
+    margin-top: clamp(5rem, 40vh, 11.5rem);
+   }
+}
+
+
+
+    
+    
+    
+  
+
+  
